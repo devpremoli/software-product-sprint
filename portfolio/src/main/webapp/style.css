@@ -7,3 +7,13 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+#name_heading{
+    text-align: center;
+
+}
+
+p{
+    text-align:justify;
+    font: size 15px;
+}
