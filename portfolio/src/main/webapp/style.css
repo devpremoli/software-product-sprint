@@ -107,3 +107,32 @@
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+
+}
+
+.images {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.images img{
+    width: 360px;
+    height: 340px;
+    margin: 10px;
+}
+
+
+#projects {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+

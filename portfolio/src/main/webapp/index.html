@@ -10,8 +10,9 @@
   <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#">Projects</a></li>
         </ul>
     </nav>
@@ -40,13 +41,55 @@
         </div>
     </section>
 
-    <section id="portfolio">
+    <section id="gallery">
         <h1 class=headings>GALLERY</h1>
-        <div class="gallery">
+        <div class="images">
             <img src="images/g1.jpeg">
             <img src="images/g2.jpeg">
             <img src="images/g3.jpeg">
             <img src="images/g4.jpeg">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
+        <div class="project-div">
+            <h2>Online Shopping Application</h3>
+          <ul class="project-list">
+            <li>
+                Built a database based shopping cart web application able to handle administrator 
+                and customer roles.
+            </li>
+          <li>
+            Administrator role: allowed to manage the products, customers and stores, and access
+            dashboard to identify the top products
+          </li>
+        <li>
+            Customer role: allowed review, add, delete, or edit the number of products in the 
+            shopping cart, and submit orders
+        </li>
+        </ul>
+        <h2>Satellite Imaging w/ NGA</h3>
+        <ul class="project-list">
+        <li>
+            Built an object Detecting program using Tensor-FLow, Keras API, and MASK-RCNN 
+            algorithm in Python
+        </li>
+        <li>
+            The goal of this project was to detect the object from satellite images with probability 
+            percentage by using pre-trained datatsets and training the algorithm on custom datasets
+        </li>
+        </ul>
+        <h2>College Record System</h3>
+        <ul class="project-list">
+        <li>
+            Developed a GUI Interface that asks the user for personal informations, such as name, 
+            address,and email, and save the record in a csv file
+        </li>
+        <li>
+            Used Python's Tkinter library for GUI Interface
+        </li>
+    </ul>
         </div>
     </section>
   </body>
