@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -73,7 +77,6 @@
 }
 
 .headings {
-    font-family: century;
     font-size: 3rem;
     text-align: center;
     margin:  40px 0;
@@ -130,9 +133,19 @@
 }
 
 
-#projects {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
+.project-div {
+    margin-left: 30px;
 }
 
+p {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-list {
+    line-height: 35px;
+}
+
+.last-p {
+    margin-bottom: 25px;
+}
