@@ -13,7 +13,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -106,11 +107,14 @@
     </ul>
         </div>
     </section>
-    <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
-        <br/>
-        <input type="submit" />
-      </form>
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="/form-handler" method="POST" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="text-input" id="msg" col="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="send" id="send">
+        </form>
+    </section>
   </body>
 </html>

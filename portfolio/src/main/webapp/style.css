@@ -132,6 +132,9 @@
     margin: 10px;
 }
 
+#projects {
+    margin-bottom: 20px;
+}
 
 .project-div {
     margin-left: 30px;
@@ -149,3 +152,48 @@ p {
 .last-p {
     margin-bottom: 25px;
 }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+.msg {
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send {
+    padding: 10px;
+    margin: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+#send:hover {
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
