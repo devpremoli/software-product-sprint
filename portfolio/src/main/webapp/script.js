@@ -14,7 +14,7 @@
 
 /**
  * Adds a random greeting to the page.
- */
+
 
 function addRandomFacts() {
   const facts =
@@ -27,3 +27,4 @@ function addRandomFacts() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+*/
