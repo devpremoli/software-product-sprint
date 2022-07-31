@@ -1,18 +1,208 @@
-body{
-    text-align:justify;
-    font: size 15px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0
 }
 
-#greeting-container {
-  margin-top: 20px;
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
 }
 
-#name_heading {
+.navbar ul li {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home {
+    display:flex;
+    flex-direction: column;
+    height: 840px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;    
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("images/pp1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 8%;
+}
+
+.headings {
+    font-size: 3rem;
     text-align: center;
+    margin:  40px 0;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;    
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+
+}
+
+.images {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.images img{
+    width: 360px;
+    height: 340px;
+    margin: 10px;
+}
+
+#projects {
+    margin-bottom: 20px;
+}
+
+.project-div {
+    margin-left: 30px;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-list {
+    line-height: 35px;
+}
+
+.last-p {
+    margin-bottom: 25px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.input {
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+.msg {
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send {
+    padding: 10px;
+    margin: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+#send:hover {
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+#text {
+  width: 500px;
+  height: 125px;
+}
+
+#language {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

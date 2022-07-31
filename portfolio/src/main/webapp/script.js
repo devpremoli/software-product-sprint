@@ -12,18 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
+function requestTranslation() {
+    const text = document.getElementById('text').value;
+    const languageCode = document.getElementById('language').value;
 
-function addRandomFacts() {
-  const facts =
-      ['First rule of fight club! you do not talk about fight club', 'I am a rising Junior', 'my favorite game is table tennis'];
+    const resultContainer = document.getElementById('result');
+    resultContainer.innerText = 'Loading...';
 
-  // Pick a random greeting.
-  const fact= facts[Math.floor(Math.random() * facts.length)];
+    const params = new URLSearchParams();
+    params.append('text', text);
+    params.append('languageCode', languageCode);
 
-  // Add it to the page.
-  const factContainer = document.getElementById('fact-container');
-  factContainer.innerText = fact;
-}
+    fetch('/translate', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+      resultContainer.innerText = translatedMessage;
+    });
+  }

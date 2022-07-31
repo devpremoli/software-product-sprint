@@ -8,62 +8,126 @@
   </head>
 
   <body>
-    <div id="content">
-      <h1 id="name_heading"><b>PREM RAJ OLI</b></h1>
-      <img src="/images/pp1.jpg" alt="profile image" style="width:700px;height:700px">
-      <p>
-          Hi, there! This is Prem. I am a Computer Science student and I love cooking, enjoy 
-          spicy foods, and listen to rap music. To know more about me read through my profile below.
-      </p>
-      <h2>PROFILE</h2>
-      <p>
-          I am orginally from Banke district of Nepal. After completing my high school in 2019, I got 
-          admission from Howard University. I had to complete first year online while staying in home 
-          country due to Covid-19 and I arrived in USA in 2021. Currently, I am a rising junior pursuing 
-          my bachelor's degree in Computer Science at Howard University in Washington, D.C. I am an
-          enthusiastic Computer Science Student interested in Software develpoment, Machine Learning, 
-          and Artificial Intelligence.
-      </p>
-      <h2>PROJECTS</h2>
-        <h3>Online Shopping Application</h3>
-          <ul>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM <br> PREM RAJ OLI</h1>
+        </div>
+    </section>
+
+    <section id="profile">
+        <h1 class="headings">PROFILE</h1>
+        <div id="pic">
+            <img src="images/pp1.jpg">
+            <div id="intro">
+                <h2>PREM RAJ OLI</h2>
+                <p>
+                    I am orginally from Banke district of Nepal. After completing my high school in 2019, 
+                    I got admission from Howard University. I had to complete first year online while staying in 
+                    home country due to Covid-19 and I arrived in USA in 2021. Currently, I am a rising junior pursuing 
+                    my bachelor's degree in Computer Science at Howard University in Washington, D.C. I am an 
+                    enthusiastic Computer Science Student interested in Software develpoment, Machine Learning, 
+                    and Artificial Intelligence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h1 class=headings>GALLERY</h1>
+        <div class="images">
+            <img src="images/g1.jpeg">
+            <img src="images/g2.jpeg">
+            <img src="images/g3.jpeg">
+            <img src="images/g4.jpeg">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
+        <div class="project-div">
+            <h2>Online Shopping Application</h3>
+          <ul class="project-list">
             <li>
-                Built a database based shopping cart web application able to handle administrator 
-                and customer roles.
+                <p>
+                Built a database based shopping cart web application able to handle administrator and customer roles
+                </p>
             </li>
           <li>
-            Administrator role: allowed to manage the products, customers and stores, and access
-            dashboard to identify the top products
+              <p>
+                Administrator role: allowed to manage the products, customers and stores, and access dashboard to identify the top products
+              </p>
           </li>
         <li>
-            Customer role: allowed review, add, delete, or edit the number of products in the 
-            shopping cart, and submit orders
+            <p class="last-p">
+            Customer role: allowed review, add, delete, or edit the number of products in the shopping cart, and submit orders
+            </p>
         </li>
         </ul>
-        <h3>Satellite Imaging w/ NGA</h3>
-        <ul>
+        <h2>Satellite Imaging w/ NGA</h3>
+        <ul class="project-list">
         <li>
-            Built an object Detecting program using Tensor-FLow, Keras API, and MASK-RCNN 
-            algorithm in Python
+            <p>
+            Built an object Detecting program using Tensor-FLow, Keras API, and MASK-RCNN algorithm in Python
+            </p>
         </li>
         <li>
-            The goal of this project was to detect the object from satellite images with probability 
-            percentage by using pre-trained datatsets and training the algorithm on custom datasets
+            <p class="last-p">
+            The goal of this project was to detect the object from satellite images with probability percentage by using pre-trained datatsets and training the algorithm on custom datasets
+            </p>
         </li>
         </ul>
-        <h3>College Record System</h3>
-        <ul>
+        <h2>College Record System</h3>
+        <ul class="project-list">
         <li>
-            Developed a GUI Interface that asks the user for personal informations, such as name, 
-            address,and email, and save the record in a csv file
+            <p>
+            Developed a GUI Interface that asks the user for personal informations, such as name, address,and email, and save the record in a csv file
+            </p>
         </li>
         <li>
+            <p>
             Used Python's Tkinter library for GUI Interface
+            </p>
         </li>
     </ul>
-      <p>Click here to get a random facts about me:</p>
-      <button onclick="addRandomFacts()">Click Me</button>
-      <div id="fact-container"></div>
-    </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="/form-handler" method="POST" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="text-input" id="msg" col="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="send" id="send">
+        </form>
+    </section>
+
+    <h1>Translation</h1>
+    <p>Type a message and select a language, then click submit to translate it.</p>
+
+    <textarea id="text"></textarea>
+
+    <select id="language">
+      <option value="es">English</option>
+      <option value="zh">Chinese</option>
+      <option value="es">Spanish</option>
+      <option value="hi">Hindi</option>
+      <option value="ar">Arabic</option>
+    </select>
+
+    <button onclick="requestTranslation();">Translate</button>
+
+    <hr/>
+    <div id="result"></div>
   </body>
 </html>
